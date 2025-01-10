@@ -1,0 +1,51 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diwakar,Rishabh' friend's chatting web.P.V.T. LTD</title>
+    <style>
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        nav button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diwakar,Rishabh' friend's chatting web.P.V.T. LTD</h1>
+        <nav>
+            <button onclick="showMenu()">Menu</button>
+        </nav>
+    </header>
+    <div id="menu" style="display: none;">
+        <button onclick="adminRequest()">Apply Admin Request</button>
+        <button onclick="chatWithAdmin()">Chat with OTHETR Admin</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function showMenu() {
+            document.getElementById('menu').style.display = 'block';
+        }
+
+        function adminRequest() {
+            window.location.href = 'admin_request.html';
+        }
+
+        function chatWithOTHERAdmin() {
+            window.location.href = 'chat.html';
+        }
+
+        function login() {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
